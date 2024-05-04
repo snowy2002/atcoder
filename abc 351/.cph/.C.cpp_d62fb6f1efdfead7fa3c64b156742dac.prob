@@ -1,0 +1,1 @@
+{"name":"Local: C","url":"c:\\Users\\30995\\Desktop\\atcoder\\abc 351\\C.cpp","tests":[{"id":1714219691567,"input":"5\n0 0 0 1 2\n","output":""},{"id":1714219762163,"input":"7\n2 1 1 3 5 3 3\n","output":""}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"c:\\Users\\30995\\Desktop\\atcoder\\abc 351\\C.cpp","group":"local","local":true}
