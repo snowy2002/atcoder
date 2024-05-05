@@ -51,14 +51,9 @@ void solve() {
         }
     }
     int N = a.size();
-    // cout << a.size() << "!!\n";
     vector<int> an(n + 1);
-    // for(auto i : a) {
-    //     cout << i << "!!\n";
-    // }
     for(int i = 0; i < N; i++) {
         vector f1(1 << n + 1, 0ll);
-        // vector f2 = f1;
         int tot = 0;
         f1[0] = 1;
         for(int j = 0; j < N; j++) {
@@ -70,18 +65,11 @@ void solve() {
                     if((k & res) != 0) continue;
                     if(!f1[k]) continue;
                     f2[k | res] |= f1[k];
-                    // cout << (k | res) << " <- " << k << "!\n";
                 }
                 res = res * 2;
             }
             f1 = f2;
         }
-        // cout << "i:" << i << "\n";
-        // for(int k = 0; k < (1 << n); k++) {
-        //     if(f1[k]) {
-        //         cout << "!!::::" << k << "!\n";
-        //     }
-        // }
         
         int res = a[i], now = 1, ok = 0, ans = 0;
         while(res <= (1 << n) - 1) {
@@ -92,12 +80,10 @@ void solve() {
             res <<= 1;
             now += 1;
         }
-        // cout << ok << "!!!\n" << ans << "!!\n";
         if(ok) an[i] = ans;
     }
 
     vector<int> aa(n + 1);
-    // vector<>
     auto dfs1 = [&](auto dfs1, int x, int pd) -> void {
         aa[x] = pd;
         vis[x] = 1;
